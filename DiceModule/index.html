@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dice Roller</h1>
+    <h3>User Stories</h3>
+    <p>
+      <strong>Input Number of Sides:</strong> As a user, I want to input the
+      number of sides for the dice, so I can customize the dice roll.
+      <strong>The Dice:</strong> As a user, I want to press a button to roll the
+      dice, so I can see the result of the roll based on my input.
+      <strong>Display Result:</strong> As a user, I want to see the dice roll
+      result on the screen, so I can know the result. <strong>Error:</strong> As
+      a user, I want to be notified if my input is invalid so I can correct it.
+    </p>
+    <h3>Storyboard</h3>
+    <p>
+      <strong>Load the Page</strong>, The user opens the web page and sees an
+      input field labeled "Number of Sides," a "Roll Dice" button, and a result
+      section.<strong>Enter Input</strong>, The user types a number into the
+      input field to specify the number of sides for the dice.<strong
+        >Roll the Dice</strong
+      >, The user clicks the "Roll Dice" button. The system generates a random
+      number between 1 and the specified number of sides.<strong
+        >Display the Result</strong
+      >, The result ("You is displayed on the screen, replacing the previous
+      empty result section.<strong>Invalid Input</strong> If the user enters
+      invalid input, an error message appears prompting them to correct it.
+    </p>
+    <label
+      >Dice Sides
+      <input
+        type="number"
+        id="numSides"
+        name="numSides"
+        value="6"
+        min="6"
+        max="20"
+      />
+    </label>
+    <button onClick="diceRollAndUpdate()">Roll Dice</button>
+    <div id="dice-result"></div>
+
+    <script src="script.js"></script>
+    <script src="scriptTest.js"></script>
+  </body>
+</html>
