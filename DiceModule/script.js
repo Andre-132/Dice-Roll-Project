@@ -1,4 +1,4 @@
-//Button Function
+//Button
 function getDiceInput() {
   let sides = document.getElementById("numSides").value;
   return sides;
